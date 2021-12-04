@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,mGAAI;ACAZ,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,OAAO,EAAE,IAAI;CACd;;AACD,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,MAAM,CAAC;EACN,UAAU,EAAE,OAAO;CACpB;;AAED,AAAA,KAAK,AAAA,MAAM;AACX,MAAM,AAAA,MAAM,CAAC;EACX,OAAO,EAAE,IAAI;CACd;;AAED,AAAA,IAAI,CAAC;EACH,WAAW,EDhBE,WAAW,EAAE,UAAU;ECiBpC,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,KAAK;EACvB,UAAU,EAAE,KAAK;EACjB,MAAM,EAAE,CAAC;CACV;;ACvBD,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,KAAK;CACb",
+    "sources": [
+        "../sass/styles.scss",
+        "../sass/partials/_variables.scss",
+        "../sass/partials/_base.scss",
+        "../sass/partials/_typography.scss",
+        "../sass/partials/_nav.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
