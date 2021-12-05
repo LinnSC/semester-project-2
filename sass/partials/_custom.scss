@@ -1,0 +1,36 @@
+// Fonts
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap");
+
+$font-primary: "Assistant", sans-serif;
+
+// Fonts
+
+// Colours
+$primary: #c7e4cb;
+$secondary: #e6ece6;
+// $success: $green !default;
+// $info: $cyan !default;
+// $warning: $yellow !default;
+// $danger: $red !default;
+$light: #e6ece6;
+$body-bg: #f3f3f3;
+$body-color: black;
+
+// Boder and box
+$border-radius: 10px;
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.2);
+
+// Breakpoints media queries
+// $breakpoint-mobile: 576px;
+// $breakpoint-tablet: 768px;
+// $breakpoint-desktop: 992px;
+// $breakpoint-large-desktop: 1200px;
+
+// @include media-breakpoint-up(sm) { ... }
+// @include media-breakpoint-up(md) { ... }
+// @include media-breakpoint-up(lg) { ... }
+// @include media-breakpoint-up(xl) { ... }
+// @include media-breakpoint-up(xxl) { ... }
+
+// (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px xxl: 1400px?)

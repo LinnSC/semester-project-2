@@ -1,0 +1,72 @@
+.navbar {
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .logo {
+    width: 160px;
+    height: auto;
+  }
+
+  .icons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cart-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .navbar-toggler {
+    border: none;
+    // Remove padding on the sides
+    padding: 0;
+
+    &:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+  .navbar-toggler-icon {
+    width: 1.7em;
+    height: 1.7em;
+  }
+
+  @include media-breakpoint-up(md) {
+    .container-fluid {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+
+    .collapse.navbar-collapse {
+      display: flex;
+      justify-content: end;
+    }
+
+    .me-auto {
+      margin-right: 0 !important;
+    }
+
+    li {
+      margin-right: 25px;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .login {
+      margin-left: 85px;
+      margin-right: 0;
+    }
+
+    .cart-icon {
+      position: absolute;
+      top: 20px;
+      right: 185px;
+    }
+  }
+}
