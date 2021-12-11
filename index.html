@@ -14,63 +14,162 @@
     <title>Pre Loved | Home</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img
-              class="logo"
-              src="images/preLoved-logo2.png"
-              alt="Pre Loved Logo"
-          /></a>
+    <header></header>
 
-          <div class="icons-container">
-            <a href="cart.html"
-              ><img
-                class="cart-icon"
-                src="images/kelly-icon.png"
-                alt="shopping cart"
-            /></a>
-
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="d-flex justify-content-end nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Products</a
-                >
-              </li>
-              <li class="d-flex justify-content-end nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="d-flex justify-content-end nav-item">
-                <a class="nav-link" href="waitinglist.html">Waiting list</a>
-              </li>
-              <li class="d-flex justify-content-end nav-item login">
-                <a href="login.html"
-                  ><button type="button" class="btn btn-dark login__btn">
-                    Log in
-                  </button></a
-                >
-              </li>
-            </ul>
-          </div>
+    <main>
+      <section class="hero">
+        <img
+          src="images/background-desktop.jpg"
+          class="hero__img--desktop"
+          alt="Girl sitting on sidewalk with her bag"
+        />
+        <img
+          src="images/background.jpg"
+          class="hero__img--tablet"
+          alt="Girl sitting on sidewalk with her bag"
+        />
+        <img
+          src="images/background-large.jpg"
+          class="hero__img--mobile"
+          alt="Girl sitting on sidewalk with her bag"
+        />
+        <div class="hero__text">
+          <h1>Welcome to Pre Loved</h1>
+          <p>
+            We are selling pre loved luxury handbags, shoes, jewelries and
+            watches. Take a look and see if we have the pre loved treasure you
+            have been looking for!
+          </p>
+          <button type="button" class="hero-btn btn btn-primary btn-lg">
+            <a href="products.html">Shop now</a>
+          </button>
         </div>
-      </nav>
-    </header>
-    <main></main>
+      </section>
+      <section class="carousel-section spacing">
+        <h2>New in</h2>
+
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="false"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-cards">
+                <div class="card">
+                  <img
+                    src="images/products/dior-ring.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3>Product name</h3>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="images/products/gucci-woc.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3>Product name</h3>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="images/products/LV-metis.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3>Product name</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-cards">
+                <div class="card">
+                  <img
+                    src="images/products/chanel-boots.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3>Product name</h3>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="images/products/dior-sneakers.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3>Product name</h3>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="images/products//gucci-sneakers.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3>Product name</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="waiting-list spacing">
+        <div class="waiting-list__wrap">
+          <h2>Are you looking for a special bag or item?</h2>
+          <div class="waiting-list__text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, sint aliquam labore ipsum ratione sequi? At quis
+              cupiditate nobis quod? Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit.
+            </p>
+            <p>
+              Ipsum harum suscipit iste atque aperiam ex incidunt nobis, ratione
+              magni.
+            </p>
+          </div>
+          <a href="waitinglist.html"
+            ><button type="button" class="btn btn-dark btn-lg">
+              Waiting list
+            </button></a
+          >
+        </div>
+      </section>
+    </main>
+
     <footer></footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

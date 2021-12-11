@@ -1,0 +1,171 @@
+// Hero section start
+
+.hero {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__img--desktop {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+
+  &__img--tablet {
+    display: none;
+
+    @include media-breakpoint-up(sm) {
+      display: block;
+    }
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+
+  &__img--mobile {
+    @include media-breakpoint-up(sm) {
+      display: none;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    width: 90%;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    &__text {
+      top: 15%;
+      width: 70%;
+    }
+
+    p {
+      margin: 30px 0;
+      font-size: 1.1rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__text {
+      width: 60%;
+    }
+
+    p {
+      margin: 40px 0;
+      font-size: 1.3rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    p {
+      margin: 60px 0;
+    }
+  }
+}
+
+// Hero section end
+
+// Carousel section start
+
+.carousel-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  @include media-breakpoint-up(xl) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 3rem;
+      height: 3rem;
+
+      &:hover {
+        opacity: 0.5;
+        -webkit-transition: all ease-out 0.4s;
+        -moz-transition: all ease-out 0.4s;
+        -o-transition: all ease-out 0.4s;
+        transition: all ease-out 0.4s;
+      }
+    }
+
+    .carousel-control-prev {
+      left: -10%;
+      opacity: 1;
+    }
+    .carousel-control-next {
+      right: -10%;
+      opacity: 1;
+    }
+  }
+}
+
+.carousel-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  max-width: 1000px;
+
+  .card {
+    margin: 0 5px;
+    @include media-breakpoint-up(md) {
+      margin: 0 10px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin: 0 20px;
+    }
+  }
+}
+
+// Carousel section end
+
+// Waitinglist section start
+
+.waiting-list {
+  background-color: $secondary;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  &__wrap {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    text-align: left;
+    max-width: 800px;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
+}
+
+// Waitinglist section end
