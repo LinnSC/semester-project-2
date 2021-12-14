@@ -4,6 +4,8 @@ const detailsContainer = document.querySelector(".prod-detail");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
+const titleContainer = document.querySelector("title");
+const cartButton = document.querySelector(".cart-btn");
 
 const elements = {
   productsContainer,
@@ -12,6 +14,8 @@ const elements = {
   queryString,
   params,
   id,
+  titleContainer,
+  cartButton,
 };
 
 export default elements;

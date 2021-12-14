@@ -1,7 +1,5 @@
 import elements from "../constants/elements.js";
 
-// import { cartBtnClick } from "../utilities/cartButton.js";
-
 export function renderDetails(json) {
   elements.detailsContainer.innerHTML = "";
 

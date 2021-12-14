@@ -3,8 +3,6 @@ export function addToCart(cart) {
 
   //   let cartLength = JSON.parse(localStorage.getItem("cart")).length;
 
-  //   console.log(cartLength);
-
   //   const cartCount = document.querySelector(".cart-count p");
 
   //   cartCount.innerHTML = `<p>${cartLength}</p>`;
@@ -12,8 +10,6 @@ export function addToCart(cart) {
 
 export function cartCount() {
   let cartLength = JSON.parse(localStorage.getItem("cart")).length;
-
-  console.log(cartLength);
 
   const cartCount = document.querySelector(".cart-count p");
 

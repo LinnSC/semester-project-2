@@ -7,12 +7,16 @@ import { renderDetails } from "./components/renderDetails.js";
 import { createModal } from "./components/createModal.js";
 import { cartBtnClick } from "./utilities/cartButton.js";
 
+import createTitle from "./components/createTitle.js";
+
 noID();
 
 export async function getDetails() {
   try {
     const response = await fetch(DETAILS_URL);
     const json = await response.json();
+
+    createTitle(json);
 
     renderDetails(json);
 
