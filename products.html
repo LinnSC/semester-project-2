@@ -17,7 +17,7 @@
     <header></header>
 
     <main>
-      <div class="products spacing">
+      <div class="wrapper spacing">
         <h1>Products</h1>
 
         <div class="search">
@@ -28,65 +28,14 @@
           />
         </div>
 
-        <div class="products-container container">
+        <div class="products-container container msg">
           <div class="row">
-            <div class="col-6 col-md-4">
-              <div class="card">
-                <img
-                  src="images/products/dior-ring.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h3>Product name</h3>
-                  <p>10000 kr</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4">
-              <div class="card">
-                <img
-                  src="images/products/gucci-woc.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h3>Product name</h3>
-                  <p>10000 kr</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4">
-              <div class="card">
-                <img
-                  src="images/products/gucci-woc.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h3>Product name</h3>
-                  <p>10000 kr</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4">
-              <div class="card">
-                <img
-                  src="images/products/gucci-woc.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h3>Product name</h3>
-                  <p>10000 kr</p>
-                </div>
+            <div class="loader">
+              <div class="spinner-grow" role="status">
+                <span class="visually-hidden">Loading...</span>
               </div>
             </div>
           </div>
-
-          <!-- <div class="spinner-grow" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div> -->
         </div>
       </div>
     </main>
@@ -98,5 +47,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/script.js" type="module"></script>
+    <script src="js/products.js" type="module"></script>
   </body>
 </html>

@@ -1,8 +1,37 @@
-.products {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.search {
+  margin: 2rem 0;
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    margin: 3rem 0;
+  }
+
+  &__input {
+    width: 300px;
+    border: 1px solid $primary;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+    @include media-breakpoint-up(sm) {
+      width: 500px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 600px;
+    }
+  }
+
+  &__input::placeholder {
+    font-size: 0.9rem;
+    opacity: 1;
+  }
+
+  &__input:-ms-input-placeholder {
+    font-size: 0.9rem;
+  }
+
+  &__input::-ms-input-placeholder {
+    font-size: 0.9rem;
+  }
 }
 
 .products-container {

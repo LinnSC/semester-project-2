@@ -3,7 +3,7 @@ export default function createMenu() {
 
   const { pathname } = document.location;
 
-  menuContainer.innerHTML += `  <nav class="navbar navbar-expand-md navbar-light bg-light">
+  menuContainer.innerHTML += `  <nav class="fixed-top navbar navbar-expand-md navbar-light bg-light">
                                     <div class="container-fluid">
                                         <a class="navbar-brand" href="/"
                                         ><img
@@ -13,14 +13,16 @@ export default function createMenu() {
                                         /></a>
 
                                         <div class="icons-container">
-                                        <a href="cart.html"
-                                            ><img
-                                            class="cart-icon"
-                                            src="images/kelly-icon.png"
-                                            alt="shopping cart"
-                                        /></a>
+                                            <a class="cart" href="cart.html">
+                                                <img
+                                                class="cart-icon"
+                                                src="images/kelly-icon.png"
+                                                alt="shopping cart"
+                                                />
+                                                <div class="cart-count"><p>0</p></div>
+                                            </a>
 
-                                        <button
+                                            <button
                                             class="navbar-toggler"
                                             type="button"
                                             data-bs-toggle="collapse"
@@ -28,9 +30,9 @@ export default function createMenu() {
                                             aria-controls="navbarSupportedContent"
                                             aria-expanded="false"
                                             aria-label="Toggle navigation"
-                                        >
+                                             >
                                             <span class="navbar-toggler-icon"></span>
-                                        </button>
+                                            </button>
                                         </div>
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -70,7 +72,4 @@ export default function createMenu() {
                                         </div>
                                     </div>
                                     </nav>`;
-}
-
-{
 }

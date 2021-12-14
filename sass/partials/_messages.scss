@@ -1,0 +1,33 @@
+.message {
+  margin: 0 auto;
+  width: 80%;
+  min-height: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+.message.error {
+  border: 3px solid rgb(255, 0, 106);
+  background-color: rgba(255, 0, 106, 0.5);
+}
+
+.message.warn {
+  border: 3px solid rgb(241, 133, 33);
+  background-color: rgba(241, 134, 33, 0.6);
+}
+
+.message.success {
+  border: 3px solid rgb(33, 241, 61);
+  background-color: rgba(33, 241, 61, 0.6);
+}
+
+.message.alert {
+  border: none;
+  background-color: $secondary;
+  height: 200px;
+}

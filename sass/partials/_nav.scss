@@ -17,15 +17,34 @@
     align-items: center;
   }
 
+  .cart {
+    display: flex;
+    position: relative;
+  }
+
   .cart-icon {
     width: 30px;
     height: auto;
     margin-right: 15px;
   }
 
+  .cart-count {
+    position: absolute;
+    top: 0;
+    right: 7px;
+    background-color: black;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    p {
+      text-align: center;
+      color: white;
+      font-size: 0.7rem;
+    }
+  }
+
   .navbar-toggler {
     border: none;
-    // Remove padding on the sides
     padding: 0;
 
     &:focus {
@@ -84,7 +103,7 @@
       margin-right: 0;
     }
 
-    .cart-icon {
+    .cart {
       position: absolute;
       top: 20px;
       right: 185px;
@@ -96,8 +115,7 @@
       padding-right: 60px;
       padding-left: 60px;
     }
-    .cart-icon {
-      position: absolute;
+    .cart {
       top: 24px;
       right: 195px;
     }
