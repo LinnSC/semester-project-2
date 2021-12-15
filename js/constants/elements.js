@@ -3,7 +3,7 @@ const search = document.querySelector(".search__input");
 const detailsContainer = document.querySelector(".prod-detail");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
-const id = params.get("id");
+const apiId = params.get("id");
 const titleContainer = document.querySelector("title");
 const cartButton = document.querySelector(".cart-btn");
 
@@ -13,7 +13,7 @@ const elements = {
   detailsContainer,
   queryString,
   params,
-  id,
+  apiId,
   titleContainer,
   cartButton,
 };

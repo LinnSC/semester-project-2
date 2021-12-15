@@ -1,20 +1,15 @@
+import createCart from "./components/createCart.js";
+
 import getExistingProd from "./utilities/storage/getProd.js";
 
-const products = getExistingProd();
+import MESSAGES from "./constants/messages.js";
+import displayMessage from "./components/displayMessage.js";
+import { SHOW_MESSAGE, ALERT_CLASS } from "./constants/misc.js";
 
-const cartContainer = document.querySelector(".cart__product");
+const cart = getExistingProd();
 
-products.forEach((product) => {
-  cartContainer.innerHTML += `<tr>
-                                    <th scope="row">
-                                    <img
-                                        src="${product.image}"
-                                        class="img-thumbnail"
-                                        alt="${product.title}"
-                                    />
-                                    </th>
-                                    <td class="align-top">${product.title}</td>
-                                    <td class="align-top">${product.price}</td>
-                                    <td class="align-top"><i class="fas fa-trash-alt"></i></td>
-                                </tr>`;
-});
+if (cart.length) {
+  createCart();
+} else {
+  displayMessage(ALERT_CLASS, MESSAGES.no_cart, SHOW_MESSAGE);
+}

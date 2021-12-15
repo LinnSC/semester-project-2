@@ -1,6 +1,8 @@
 import getExistingProd from "./storage/getProd.js";
 import { addToCart, cartCount } from "./storage/addToCart.js";
 
+const currentProd = getExistingProd();
+
 export function cartBtnClick() {
   const cartButton = document.querySelector(".cart-btn");
 
@@ -13,8 +15,6 @@ function handleClick() {
   const price = this.dataset.price;
   const image = this.dataset.image;
   const description = this.dataset.description;
-
-  const currentProd = getExistingProd();
 
   const productExists = currentProd.find(function (cart) {
     return cart.id === id;
