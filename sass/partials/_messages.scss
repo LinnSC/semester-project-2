@@ -1,36 +1,40 @@
 .message-container {
-  width: 300px;
-}
+  width: 350px;
 
-.message {
-  margin: 0 auto;
-  min-height: auto;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  border-radius: 15px;
-  box-shadow: var(--shadow);
-}
+  @include media-breakpoint-up(md) {
+    width: 500px;
+  }
 
-.message.error {
-  border: 3px solid $danger;
-  background-color: tint-color($danger, 50%);
-}
+  .message {
+    margin: 0 auto;
+    height: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    @include media-breakpoint-up(md) {
+      font-size: 1.2rem;
+    }
+  }
 
-.message.warn {
-  border: 3px solid $warning;
-  background-color: tint-color($warning, 50%);
-}
+  .message.error {
+    background-color: tint-color($danger, 50%);
+  }
 
-.message.success {
-  border: 3px solid $success;
-  background-color: tint-color($success, 50%);
-}
+  .message.warn {
+    background-color: tint-color($warning, 50%);
+  }
 
-.message.info {
-  border: none;
-  background-color: $secondary;
-  height: 200px;
+  .message.success {
+    background-color: tint-color($success, 50%);
+  }
+
+  .message.info {
+    background-color: $secondary;
+    height: 200px;
+  }
 }

@@ -10702,13 +10702,19 @@ main {
 }
 
 .message-container {
-  width: 300px;
+  width: 350px;
 }
 
-.message {
+@media (min-width: 768px) {
+  .message-container {
+    width: 500px;
+  }
+}
+
+.message-container .message {
   margin: 0 auto;
-  min-height: auto;
-  padding: 1rem;
+  height: auto;
+  padding: 2rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10719,28 +10725,31 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: 700;
+  font-size: 1rem;
   border-radius: 15px;
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
 }
 
-.message.error {
-  border: 3px solid #dc3545;
+@media (min-width: 768px) {
+  .message-container .message {
+    font-size: 1.2rem;
+  }
+}
+
+.message-container .message.error {
   background-color: #ee9aa2;
 }
 
-.message.warn {
-  border: 3px solid #f18521;
-  background-color: rgba(241, 134, 33, 0.6);
+.message-container .message.warn {
+  background-color: #ffe083;
 }
 
-.message.success {
-  border: 3px solid #21f13d;
-  background-color: rgba(33, 241, 61, 0.6);
+.message-container .message.success {
+  background-color: #8cc3aa;
 }
 
-.message.info {
-  border: none;
+.message-container .message.info {
   background-color: #e6ece6;
   height: 200px;
 }

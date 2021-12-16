@@ -10,7 +10,7 @@ export async function getFeatured() {
     const json = await response.json();
 
     console.log(json);
-    throw error;
+
     renderFeatured(json);
   } catch (error) {
     displayMessage(ERROR_CLASS, MESSAGES.error_message, SHOW_MESSAGE);
