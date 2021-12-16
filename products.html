@@ -17,7 +17,16 @@
     <header></header>
 
     <main>
-      <div class="wrapper spacing">
+      <div class="breadcrumb-container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Products</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="wrapper">
         <h1>Products</h1>
 
         <div class="search">
@@ -28,7 +37,7 @@
           />
         </div>
 
-        <div class="products-container container msg">
+        <div class="products-container container msg prod">
           <div class="row">
             <div class="loader">
               <div class="spinner-grow" role="status">

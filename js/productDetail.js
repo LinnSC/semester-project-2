@@ -7,6 +7,7 @@ import { renderDetails } from "./components/renderDetails.js";
 import { createModal } from "./components/createModal.js";
 import { cartBtnClick } from "./utilities/cartButton.js";
 
+import createBreadcrumb from "./components/createBreadcrumb.js";
 import createTitle from "./components/createTitle.js";
 
 noID();
@@ -17,6 +18,8 @@ export async function getDetails() {
     const json = await response.json();
 
     createTitle(json);
+
+    createBreadcrumb(json);
 
     renderDetails(json);
 

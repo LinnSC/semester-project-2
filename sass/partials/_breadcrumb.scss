@@ -1,0 +1,27 @@
+.breadcrumb-container {
+  max-width: 90%;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(sm) {
+    max-width: 80%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: 70%;
+  }
+
+  .breadcrumb {
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+
+    @include media-breakpoint-up(sm) {
+      margin-top: 3rem;
+      font-size: 1.1rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 4rem;
+    }
+  }
+}

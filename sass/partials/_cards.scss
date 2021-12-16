@@ -1,0 +1,28 @@
+.prod {
+  .row > * {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    margin: 0;
+    padding: 1rem;
+
+    @include media-breakpoint-up(md) {
+      padding: 1.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding: 1.8rem;
+    }
+  }
+
+  .card {
+    text-align: center;
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

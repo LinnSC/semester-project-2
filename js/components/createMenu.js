@@ -1,9 +1,9 @@
-export default function createMenu() {
-  const menuContainer = document.querySelector("header");
+import elements from "../constants/elements.js";
 
+export default function createMenu() {
   const { pathname } = document.location;
 
-  menuContainer.innerHTML += `  <nav class="fixed-top navbar navbar-expand-md navbar-light bg-light">
+  elements.menuContainer.innerHTML += `  <nav class="fixed-top navbar navbar-expand-md navbar-light bg-light">
                                     <div class="container-fluid">
                                         <a class="navbar-brand" href="/"
                                         ><img

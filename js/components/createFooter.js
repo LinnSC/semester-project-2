@@ -1,7 +1,7 @@
-export default function createFooter() {
-  const footerContainer = document.querySelector("footer");
+import elements from "../constants/elements.js";
 
-  footerContainer.innerHTML += `<section class="footer-section d-flex flex-column align-items-center justify-content-between">
+export default function createFooter() {
+  elements.footerContainer.innerHTML += `<section class="footer-section d-flex flex-column align-items-center justify-content-between">
                                 <div class="some">
                                     <i class="fab fa-instagram"><a href="instagram.com"></a></i>
                                     <i class="fab fa-facebook-square"><a href="facebook.com"></a></i>
