@@ -4,7 +4,7 @@ export default function logOut() {
   const logoutBtn = document.querySelector("#log-out");
 
   if (logoutBtn) {
-    logoutBtn.addEventListener("click", function () {
+    logoutBtn.addEventListener("click", () => {
       const doLogout = confirm("Are you sure you want to log out?");
 
       if (doLogout) {

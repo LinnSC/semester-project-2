@@ -20,6 +20,10 @@ const username = document.querySelector("#username");
 const password = document.querySelector("#password");
 const formMessage = document.querySelector(".form-message");
 
+const tokenKey = "token";
+const userKey = "user";
+const logoutBtn = document.querySelector("#log-out");
+
 const elements = {
   footerContainer,
   menuContainer,
@@ -38,6 +42,9 @@ const elements = {
   username,
   password,
   formMessage,
+  logoutBtn,
+  tokenKey,
+  userKey,
 };
 
 export default elements;

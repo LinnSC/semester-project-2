@@ -1,5 +1,5 @@
 import elements from "../constants/elements.js";
-import { getUsername } from "../utilities/storage/saveLogin.js";
+import { getUsername } from "../utilities/storage/getLoginInfo.js";
 import logOut from "../utilities/logOut.js";
 
 export default function createMenu() {
