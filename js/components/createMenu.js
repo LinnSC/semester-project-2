@@ -1,7 +1,19 @@
 import elements from "../constants/elements.js";
+import { getUsername } from "../utilities/storage/saveLogin.js";
+import logOut from "../utilities/logOut.js";
 
 export default function createMenu() {
   const { pathname } = document.location;
+
+  const username = getUsername();
+
+  let authBtn = `<a href="login.html">
+                    <button type="button" class="btn btn-dark login__btn">Log in</button>
+                </a>`;
+
+  if (username) {
+    authBtn = `<button id="log-out" type="button" class="btn btn-dark login__btn">Log out</button>`;
+  }
 
   elements.menuContainer.innerHTML += `  <nav class="fixed-top navbar navbar-expand-md navbar-light bg-light">
                                     <div class="container-fluid">
@@ -62,14 +74,12 @@ export default function createMenu() {
                                                   >Waiting list</a>
                                             </li>
                                             <li class="d-flex justify-content-end nav-item login">
-                                            <a href="login.html"
-                                                ><button type="button" class="btn btn-dark login__btn">
-                                                Log in
-                                                </button></a
-                                            >
+                                              ${authBtn}
                                             </li>
                                         </ul>
                                         </div>
                                     </div>
                                     </nav>`;
+
+  logOut();
 }

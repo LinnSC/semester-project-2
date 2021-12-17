@@ -3,6 +3,7 @@ const menuContainer = document.querySelector("header");
 const titleContainer = document.querySelector("title");
 const breadcrumbCurrent = document.querySelector(".breadcrumb-current");
 
+const featuredContainer = document.querySelector(".featured__cards");
 const productsContainer = document.querySelector(".row");
 const search = document.querySelector(".search__input");
 const detailsContainer = document.querySelector(".prod-detail");
@@ -14,9 +15,15 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const apiId = params.get("id");
 
+const form = document.querySelector("form");
+const username = document.querySelector("#username");
+const password = document.querySelector("#password");
+const formMessage = document.querySelector(".form-message");
+
 const elements = {
   footerContainer,
   menuContainer,
+  featuredContainer,
   productsContainer,
   search,
   detailsContainer,
@@ -27,6 +34,10 @@ const elements = {
   cartButton,
   cartContainer,
   breadcrumbCurrent,
+  form,
+  username,
+  password,
+  formMessage,
 };
 
 export default elements;

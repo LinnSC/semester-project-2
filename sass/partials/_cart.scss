@@ -36,6 +36,14 @@
       --bs-gutter-x: 5rem;
     }
   }
+
+  .fa-trash-alt {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
 }
 
 .cart-products {
@@ -105,12 +113,5 @@
 
   td {
     text-align: right;
-  }
-
-  .btn {
-    margin-top: 1rem;
-    @include media-breakpoint-up(sm) {
-      margin-top: 1.5rem;
-    }
   }
 }

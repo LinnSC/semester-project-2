@@ -51,20 +51,12 @@
       font-size: 2rem;
     }
     @media (min-width: 800px) {
-      font-size: 2.3rem;
+      font-size: 2.5rem;
     }
   }
 
   p {
     margin: 1rem 0;
-  }
-
-  .btn {
-    margin-top: 1rem;
-
-    @include media-breakpoint-up(lg) {
-      margin-top: 2rem;
-    }
   }
 
   .modal-content {

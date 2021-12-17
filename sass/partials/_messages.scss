@@ -1,40 +1,51 @@
 .message-container {
-  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 2rem 3rem;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
 
   @include media-breakpoint-up(md) {
-    width: 500px;
+    font-size: 1.1rem;
   }
+}
 
+.message.error {
+  background-color: tint-color($danger, 60%);
+}
+
+.message.warn {
+  background-color: tint-color($warning, 60%);
+}
+
+.message.success {
+  background-color: tint-color($success, 60%);
+}
+
+.message.info {
+  background-color: $secondary;
+  height: 200px;
+}
+
+.form-message {
   .message {
-    margin: 0 auto;
-    height: auto;
-    padding: 2rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 1rem;
-    border-radius: 15px;
-    box-shadow: var(--shadow);
+    width: 100%;
+    font-weight: 500;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1.5rem;
+
     @include media-breakpoint-up(md) {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
-  }
-
-  .message.error {
-    background-color: tint-color($danger, 50%);
-  }
-
-  .message.warn {
-    background-color: tint-color($warning, 50%);
-  }
-
-  .message.success {
-    background-color: tint-color($success, 50%);
-  }
-
-  .message.info {
-    background-color: $secondary;
-    height: 200px;
   }
 }

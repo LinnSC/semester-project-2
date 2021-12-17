@@ -10313,11 +10313,13 @@ h4, .h4 {
   font-size: 0.9rem;
   font-weight: 500;
   padding: 0;
+  margin-top: 1rem;
 }
 
 @media (min-width: 576px) {
   .btn-sm {
     width: 150px;
+    margin-top: 1.5rem;
   }
 }
 
@@ -10326,6 +10328,12 @@ h4, .h4 {
     width: 160px;
     height: 45px;
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn-sm {
+    margin-top: 2rem;
   }
 }
 
@@ -10702,19 +10710,6 @@ main {
 }
 
 .message-container {
-  width: 350px;
-}
-
-@media (min-width: 768px) {
-  .message-container {
-    width: 500px;
-  }
-}
-
-.message-container .message {
-  margin: 0 auto;
-  height: auto;
-  padding: 2rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10724,34 +10719,61 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  padding: 2rem 3rem;
   font-weight: 700;
   font-size: 1rem;
-  border-radius: 15px;
+  border-radius: 5px;
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
 }
 
 @media (min-width: 768px) {
-  .message-container .message {
-    font-size: 1.2rem;
+  .message {
+    font-size: 1.1rem;
   }
 }
 
-.message-container .message.error {
-  background-color: #ee9aa2;
+.message.error {
+  background-color: #f1aeb5;
 }
 
-.message-container .message.warn {
-  background-color: #ffe083;
+.message.warn {
+  background-color: #ffe69c;
 }
 
-.message-container .message.success {
-  background-color: #8cc3aa;
+.message.success {
+  background-color: #a3cfbb;
 }
 
-.message-container .message.info {
+.message.info {
   background-color: #e6ece6;
   height: 200px;
+}
+
+.form-message .message {
+  width: 100%;
+  font-weight: 500;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .form-message .message {
+    font-size: 1rem;
+  }
 }
 
 .prod-detail {
@@ -10821,22 +10843,12 @@ main {
 
 @media (min-width: 800px) {
   .prod-detail h1, .prod-detail .h1 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
 }
 
 .prod-detail p {
   margin: 1rem 0;
-}
-
-.prod-detail .btn {
-  margin-top: 1rem;
-}
-
-@media (min-width: 992px) {
-  .prod-detail .btn {
-    margin-top: 2rem;
-  }
 }
 
 .prod-detail .modal-content {
@@ -10902,6 +10914,14 @@ main {
   .cart .row {
     --bs-gutter-x: 5rem;
   }
+}
+
+.cart .fa-trash-alt {
+  cursor: pointer;
+}
+
+.cart .fa-trash-alt:hover {
+  opacity: 0.6;
 }
 
 .cart-products th {
@@ -10970,16 +10990,6 @@ main {
   text-align: right;
 }
 
-.cart-summary .btn {
-  margin-top: 1rem;
-}
-
-@media (min-width: 576px) {
-  .cart-summary .btn {
-    margin-top: 1.5rem;
-  }
-}
-
 .alert {
   height: 120px;
   display: -webkit-box;
@@ -11031,5 +11041,66 @@ main {
   .breadcrumb-container .breadcrumb {
     margin-top: 4rem;
   }
+}
+
+.form-container {
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+@media (min-width: 576px) {
+  .form-container {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-container {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .form-container {
+    max-width: 40%;
+  }
+}
+
+.form-container h1, .form-container .h1 {
+  margin-bottom: 1.7rem;
+}
+
+@media (min-width: 800px) {
+  .form-container h1, .form-container .h1 {
+    font-size: 2rem;
+  }
+}
+
+.form-container .card {
+  background-color: #d2e9d5;
+}
+
+.form-container .form-center {
+  margin: 10% 5%;
+}
+
+@media (min-width: 576px) {
+  .form-container .form-center {
+    margin: 10% 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-container .form-center {
+    margin: 10% 20%;
+  }
+}
+
+.form-container label {
+  font-weight: 600;
+}
+
+.form-container .form-error {
+  color: #dc3545;
 }
 /*# sourceMappingURL=styles.css.map */

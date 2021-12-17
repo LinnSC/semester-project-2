@@ -10,3 +10,5 @@ export const WARNING_ALERT = "alert-warning";
 export const SUCCESS_ALERT = "alert-success";
 
 export const SHOW_ALERT = ".alert-container";
+
+export const FORM_MESSAGE = ".form-message";

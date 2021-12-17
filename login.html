@@ -25,6 +25,48 @@
           </ol>
         </nav>
       </div>
+
+      <div class="form-container spacing">
+        <div class="card">
+          <div class="card-body">
+            <div class="form-center">
+              <div class="center">
+                <h1>Log in</h1>
+              </div>
+              <div class="form-message"></div>
+              <form>
+                <div class="mb-4 label-input">
+                  <label for="username" class="form-label"
+                    >Username / E-mail</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="username"
+                    aria-describedby="emailHelp"
+                  />
+                  <!-- <div id="emailError" class="form-text user-error"></div> -->
+                </div>
+                <div class="mb-4 label-input">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" />
+
+                  <!-- <div
+                    id="passwordError"
+                    class="form-text password-error"
+                  ></div> -->
+                </div>
+
+                <div class="mb-4 center">
+                  <button type="submit" class="mb-3 btn btn-dark btn-sm">
+                    Log in
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer></footer>
@@ -34,5 +76,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/script.js" type="module"></script>
+    <script src="js/login.js" type="module"></script>
   </body>
 </html>

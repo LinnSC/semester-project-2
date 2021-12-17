@@ -8,15 +8,19 @@ export default function createCart() {
   const products = getExistingProd();
 
   products.forEach((product) => {
-    elements.cartContainer.innerHTML += `<tr>
+    elements.cartContainer.innerHTML += ` <tr>
                                           <th scope="row">
-                                            <img
+                                            <a href="product-detail.html?id=${product.id}">
+                                              <img
                                                 src="${product.image}"
                                                 class="img-thumbnail"
                                                 alt="${product.title}"
-                                            />
+                                              />
+                                            </a>
                                           </th>
-                                          <td class="title align-top">${product.title}</td>
+                                          <td class="title align-top">
+                                            <a href="product-detail.html?id=${product.id}">${product.title}</a>
+                                          </td>
                                           <td class="align-top">${product.price}</td>
                                           <td class="align-top">
                                             <i data-id="${product.id}"  
