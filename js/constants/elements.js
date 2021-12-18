@@ -5,7 +5,7 @@ const menuContainer = document.querySelector("header");
 const titleContainer = document.querySelector("title");
 const breadcrumbCurrent = document.querySelector(".breadcrumb-current");
 
-const herContainer = document.querySelector(".hero__background");
+const heroContainer = document.querySelector(".hero__background");
 const featuredContainer = document.querySelector(".featured__cards");
 const productsContainer = document.querySelector(".row");
 const search = document.querySelector(".search__input");
@@ -53,7 +53,7 @@ const elements = {
   footerContainer,
   menuContainer,
   featuredContainer,
-  herContainer,
+  heroContainer,
   productsContainer,
   search,
   detailsContainer,

@@ -10517,50 +10517,33 @@ main {
   padding: 20px;
 }
 
-.hero__text {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  text-align: center;
-  width: 90%;
-}
-
-.hero__text p {
+.hero p {
   text-align: left;
 }
 
 @media (min-width: 576px) {
-  .hero__background {
+  __background {
     min-height: 50vh;
     padding: 10% 20%;
   }
-  .hero__text {
-    top: 15%;
-    width: 70%;
-  }
-  .hero p {
+  p {
     margin: 30px 0;
     font-size: 1.1rem;
   }
 }
 
 @media (min-width: 992px) {
-  .hero__background {
+  __background {
     min-height: 70vh;
   }
-  .hero__text {
-    width: 60%;
-  }
-  .hero p {
+  p {
     margin: 40px 0;
     font-size: 1.3rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .hero p {
+  p {
     margin: 60px 0;
   }
 }
