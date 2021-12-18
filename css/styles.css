@@ -10186,13 +10186,13 @@ h4, .h4 {
 .navbar .cart-icon {
   width: 30px;
   height: auto;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .navbar .cart-count {
   position: absolute;
   top: 0;
-  right: 7px;
+  right: 10px;
   background-color: black;
   border-radius: 50%;
   width: 15px;
@@ -10522,28 +10522,28 @@ main {
 }
 
 @media (min-width: 576px) {
-  __background {
+  .hero__background {
     min-height: 50vh;
     padding: 10% 20%;
   }
-  p {
+  .hero p {
     margin: 30px 0;
     font-size: 1.1rem;
   }
 }
 
 @media (min-width: 992px) {
-  __background {
+  .hero__background {
     min-height: 70vh;
   }
-  p {
+  .hero p {
     margin: 40px 0;
     font-size: 1.3rem;
   }
 }
 
 @media (min-width: 1200px) {
-  p {
+  .hero p {
     margin: 60px 0;
   }
 }
@@ -10977,7 +10977,7 @@ main {
 
 .list-products .reload {
   text-align: right;
-  margin: 30px 0 15px 0;
+  margin: 2rem 0 15px 0;
   cursor: pointer;
 }
 
@@ -10986,7 +10986,7 @@ main {
 }
 
 .list-products .reload i {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .list-products .reload span {

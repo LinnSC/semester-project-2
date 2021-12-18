@@ -2,6 +2,8 @@ import elements from "../constants/elements.js";
 import { getUsername } from "../utilities/storage/getLoginInfo.js";
 import logOut from "../utilities/login/logOut.js";
 
+import navClose from "../utilities/navClose.js";
+
 export default function createMenu() {
   const { pathname } = document.location;
 
@@ -104,4 +106,5 @@ export default function createMenu() {
                                     </nav>`;
 
   logOut();
+  navClose();
 }

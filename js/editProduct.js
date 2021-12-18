@@ -9,6 +9,7 @@ import createTitle from "./components/createTitle.js";
 import populateEditForm from "./components/populateEditForm.js";
 import editProdSubmit from "./utilities/editProd/editProdSubmit.js";
 import deleteButton from "./utilities/deleteProduct.js";
+import rederect from "./utilities/rederect.js";
 
 noID();
 rederect();

@@ -22,9 +22,6 @@ export function listProducts(listProd) {
                                         </a>
                                     </td>
                                     <td class="align-top">${json.price},00 kr</td>
-                                    <td class="align-top">
-                                    <i class="fas fa-trash-alt"> </i>
-                                    </td>
                                 </tr>`;
   });
 }
