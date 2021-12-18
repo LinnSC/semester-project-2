@@ -11,25 +11,39 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Pre Loved | Admin</title>
+    <title>Pre Loved |</title>
   </head>
   <body>
     <header></header>
 
     <main>
+      <div class="alert-container"></div>
       <div class="breadcrumb-container">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active">Admin</li>
+            <li class="breadcrumb-item">
+              <a href="admin.html">Admin</a>
+            </li>
+            <li
+              class="breadcrumb-item active breadcrumb-current"
+              aria-current="page"
+            >
+              Edit product
+            </li>
           </ol>
         </nav>
       </div>
       <div class="form-container">
-        <h1>Add products</h1>
+        <div class="mb-4"><h1>Edit product</h1></div>
 
         <div class="form-message"></div>
-        <form>
+        <div class="loader">
+          <div class="spinner-grow" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        <form class="edit-form">
           <div class="mb-4">
             <label for="inputTitle" class="form-label">Title</label>
             <input
@@ -51,7 +65,7 @@
               aria-describedby="priceError"
             />
             <div id="priceError" class="form-text">
-              *Please put in a product price. It has to be a number.
+              *Please put in a product price
             </div>
           </div>
           <div class="mb-4">
@@ -79,6 +93,16 @@
               *Please put in an image url
             </div>
           </div>
+          <div class="mb-4">
+            <label for="inputId" class="form-label">ID</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputId"
+              aria-describedby="idError"
+            />
+            <div id="idError" class="form-text">*Please put in an id</div>
+          </div>
           <div class="mb-4 form-check form-switch">
             <input
               class="form-check-input"
@@ -90,35 +114,14 @@
               >Featured product</label
             >
           </div>
-          <div class="center">
+          <div class="center mb-4">
             <button type="submit" class="btn btn-sm btn-dark">
-              Add product
+              Update product
             </button>
           </div>
         </form>
-        <div class="mar-top mb-4">
-          <h2>Edit products</h2>
-        </div>
 
-        <div class="list-products">
-          <div class="msg"></div>
-          <div class="reload">
-            <span>Update productlist</span>
-            <i class="fas fa-redo-alt"></i>
-          </div>
-
-          <table class="table">
-            <thead class="">
-              <tr>
-                <th class="col-3 col-lg-2" scope="col"></th>
-                <th class="col-3 col-lg-4" scope="col"></th>
-                <th class="col-2" scope="col"></th>
-                <th class="col-1" scope="col"></th>
-              </tr>
-            </thead>
-            <tbody class="prod"></tbody>
-          </table>
-        </div>
+        <div class="center mb-4 delete-container"></div>
       </div>
     </main>
 
@@ -129,6 +132,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/script.js" type="module"></script>
-    <script src="js/admin.js" type="module"></script>
+    <script src="js/editProduct.js" type="module"></script>
   </body>
 </html>

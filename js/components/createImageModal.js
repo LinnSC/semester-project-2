@@ -1,6 +1,6 @@
 import elements from "../constants/elements.js";
 
-export function createModal(json) {
+export function createImageModal(json) {
   elements.detailsContainer.innerHTML += `<div
                                             class="modal fade"
                                             id="exampleModal"

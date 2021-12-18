@@ -1,0 +1,48 @@
+.list-products {
+  th {
+    padding: 0 0 15px 10px;
+  }
+
+  .prod {
+    tr {
+      border-color: black;
+      border-style: solid;
+      border-width: 1px;
+      border-bottom: transparent;
+      border-left: transparent;
+      border-right: transparent;
+    }
+
+    .title {
+      font-weight: 600;
+    }
+  }
+
+  td {
+    padding-left: 10px;
+    font-size: 0.9rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1rem;
+    }
+  }
+
+  .reload {
+    text-align: right;
+    margin: 30px 0 15px 0;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    i {
+      font-size: 20px;
+    }
+
+    span {
+      font-weight: 600;
+      margin-right: 5px;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import clearLoginKeys from "./storage/clearLoginKeys.js";
+import clearLoginKeys from "../storage/clearLoginKeys.js";
 
 export default function logOut() {
   const logoutBtn = document.querySelector("#log-out");

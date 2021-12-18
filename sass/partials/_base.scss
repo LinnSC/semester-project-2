@@ -12,10 +12,11 @@ html {
   box-sizing: inherit;
 }
 
+button:focus,
 input:focus,
 textarea:focus,
 select:focus {
-  outline: none;
+  outline: none !important;
 }
 
 body {

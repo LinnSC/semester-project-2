@@ -8,7 +8,7 @@ export default function createCart() {
   const products = getExistingProd();
 
   products.forEach((product) => {
-    elements.cartContainer.innerHTML += ` <tr>
+    elements.prodContainer.innerHTML += ` <tr>
                                           <th scope="row">
                                             <a href="product-detail.html?id=${product.id}">
                                               <img
@@ -21,7 +21,7 @@ export default function createCart() {
                                           <td class="title align-top">
                                             <a href="product-detail.html?id=${product.id}">${product.title}</a>
                                           </td>
-                                          <td class="align-top">${product.price}</td>
+                                          <td class="align-top">${product.price},00 kr</td>
                                           <td class="align-top">
                                             <i data-id="${product.id}"  
                                             class="fas fa-trash-alt">
@@ -31,7 +31,7 @@ export default function createCart() {
   });
   trashBtnClick();
 }
-export function trashBtnClick() {
+function trashBtnClick() {
   const trashButton = document.querySelectorAll(".fa-trash-alt");
 
   trashButton.forEach((button) => {

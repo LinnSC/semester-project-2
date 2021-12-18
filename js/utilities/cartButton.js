@@ -1,10 +1,8 @@
 import getExistingProd from "./storage/getProd.js";
 import { addToCart, cartCount } from "./storage/addToCart.js";
-
 import displayAlert from "../components/displayAlert.js";
 
 import { WARNING_ALERT, SHOW_ALERT } from "../constants/misc.js";
-
 import MESSAGES from "../constants/messages.js";
 
 const currentProd = getExistingProd();
@@ -40,14 +38,24 @@ function handleClick() {
     addToCart(currentProd);
 
     cartCount();
+
+    // const modalContainer = document.querySelector(".alert-container");
+
+    // modalContainer.innerHTML += `<div class=" modal fade" id="alertModal" tabindex="-1" aria-labelledby="alertModalLabel" aria-hidden="true">
+    //                             <div class="modal-dialog modal-dialog-centered">
+    //                             <div class="modal-content">
+    //                                 <div class="modal-header">
+    //                                 <h5 class="modal-title" id="alertModalLabel">Hello</h5>
+    //                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    //                                 </div>
+    //                                 <div class="modal-body">
+    //                                 <p>Hello</p>
+    //                                 </div>
+    //                             </div>
+    //                             </div>
+    //                         </div>`;
   } else {
-    // const container = document.querySelector(".alert-container");
-
-    // container.innerHTML += `<div class="alert alert-warning alert-dismissible fade show" role="alert">
-    //                           <p><strong>We are sorry!</strong> There are only one of this item in stock.</p>
-    //                           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    //                       </div>`;
-
     displayAlert(WARNING_ALERT, MESSAGES.no_more_stock, SHOW_ALERT);
+    window.scrollTo(0, 0);
   }
 }

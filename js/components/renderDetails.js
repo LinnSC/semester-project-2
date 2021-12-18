@@ -4,6 +4,7 @@ export function renderDetails(json) {
   elements.detailsContainer.innerHTML = "";
 
   elements.detailsContainer.innerHTML += `<div class="card mb-3" style="max-width: 800px">
+  
                                             <div class="row g-0">
                                                 <div class="col-sm-4">
                                                     <button
@@ -19,7 +20,7 @@ export function renderDetails(json) {
                                                 <div class="col-sm-8 detail-info">
                                                     <div class="card-body">
                                                         <h1 class="card-title">${json.title}</h1>
-                                                        <p class="card-price">${json.price} kr</p>
+                                                        <p class="card-price">${json.price},00 kr</p>
                                                         <p class="card-text">${json.description}</p>
                                                         <div class="center">
                                                             <button 
@@ -36,5 +37,6 @@ export function renderDetails(json) {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>`;
+                                        </div>
+                                       `;
 }

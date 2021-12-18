@@ -1,23 +1,10 @@
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     border-left: 1000px solid transparent;
-//     border-right: 1000px solid transparent;
-//     border-top: 100px solid red;
-
-//     top: 0;
-//     text-align: center;
-//     z-index: 1000;
-//   }
-
 main {
   margin-top: 80px;
+  padding-bottom: 80px;
 }
 
 .spacing {
-  padding: 2.5rem 0;
+  padding: 3rem 0;
 
   @include media-breakpoint-up(md) {
     padding: 4rem 0;
@@ -28,16 +15,23 @@ main {
   }
 }
 
+.mar-top {
+  margin-top: 3rem;
+
+  @include media-breakpoint-up(sm) {
+    margin-top: 4rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 5rem;
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.card {
-  border: none;
-  box-shadow: $box-shadow;
 }
 
 .center {

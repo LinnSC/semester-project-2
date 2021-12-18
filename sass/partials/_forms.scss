@@ -12,14 +12,23 @@
     max-width: 40%;
   }
 
-  h1 {
-    margin-bottom: 1.7rem;
-    @media (min-width: 800px) {
-      font-size: 2rem;
-    }
+  h1,
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
   }
+
   .card {
     background-color: tint-color($primary, 20%);
+
+    h1 {
+      @include media-breakpoint-up(sm) {
+        font-size: 2rem;
+      }
+      @media (min-width: 800px) {
+        font-size: 2.2rem;
+      }
+    }
   }
 
   .form-center {
@@ -32,12 +41,47 @@
       margin: 10% 20%;
     }
   }
+}
 
-  label {
+.form-error {
+  color: $danger;
+}
+
+form {
+  .form-label,
+  .form-check-label {
     font-weight: 600;
   }
 
-  .form-error {
+  .form-control {
+    background-color: white;
+    border: 1px solid $primary;
+
+    &:focus {
+      background-color: white;
+    }
+  }
+
+  .form-switch {
+    margin: 1rem 0 0 5px;
+    display: flex;
+    align-items: center;
+
+    .form-check-input {
+      width: 2.5rem;
+      height: 1.5rem;
+    }
+    .form-check-label {
+      margin-left: 10px;
+    }
+  }
+
+  .form-text {
+    display: none;
     color: $danger;
   }
+}
+
+.edit-form {
+  display: none;
 }

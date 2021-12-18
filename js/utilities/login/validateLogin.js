@@ -1,4 +1,8 @@
-import { saveToken, saveUser } from "./storage/saveLoginInfo.js";
+import { saveToken, saveUser } from "../storage/saveLoginInfo.js";
+
+import { WARNING_CLASS, FORM_MESSAGE } from "../../constants/misc.js";
+
+import displayMessage from "../../components/displayMessage.js";
 
 export default function validateLogin(json) {
   if (json.user) {
@@ -10,6 +14,7 @@ export default function validateLogin(json) {
 
   if (json.error) {
     const invalidMessage = json.message[0].messages[0].message;
+
     displayMessage(WARNING_CLASS, invalidMessage, FORM_MESSAGE);
   }
 }

@@ -6,6 +6,8 @@ import MESSAGES from "./constants/messages.js";
 import displayMessage from "./components/displayMessage.js";
 import { SHOW_MESSAGE, INFO_CLASS } from "./constants/misc.js";
 
+import cartSummary from "./utilities/cartSummary.js";
+
 const cart = getExistingProd();
 
 if (cart.length) {
@@ -13,3 +15,5 @@ if (cart.length) {
 } else {
   displayMessage(INFO_CLASS, MESSAGES.no_cart, SHOW_MESSAGE);
 }
+
+cartSummary();

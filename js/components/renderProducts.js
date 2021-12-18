@@ -14,7 +14,7 @@ export function renderProducts(productsToRender) {
                                                     />
                                                     <div class="card-body">
                                                         <h3>${json.title}</h3>
-                                                        <p>${json.price} kr</p>
+                                                        <p>${json.price},00 kr</p>
                                                     </div>
                                                     </div>
                                                 </a>
