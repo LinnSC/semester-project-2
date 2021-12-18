@@ -2,10 +2,10 @@ import elements from "../constants/elements.js";
 
 export function createImageModal(json) {
   elements.detailsContainer.innerHTML += `<div
-                                            class="modal fade"
-                                            id="exampleModal"
+                                            class="modal fade image-modal"
+                                            id="imageModal"
                                             tabindex="-1"
-                                            aria-labelledby="exampleModalLabel"
+                                            aria-labelledby="imageModalLabel"
                                             aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">

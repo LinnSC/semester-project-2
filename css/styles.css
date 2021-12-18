@@ -10836,15 +10836,6 @@ main {
   margin: 1rem 0;
 }
 
-.prod-detail .modal-content {
-  border: none;
-  border-radius: 10px;
-}
-
-.prod-detail .modal-content img {
-  border-radius: 10px;
-}
-
 .cart {
   max-width: 90%;
   margin: 0 auto;
@@ -11153,5 +11144,61 @@ form .form-text {
 
 .edit-form {
   display: none;
+}
+
+.modal .btn-close {
+  margin: 7px 7px 0 0;
+}
+
+@media (min-width: 576px) {
+  .addCart-modal .modal-dialog {
+    max-width: 600px;
+  }
+}
+
+.addCart-modal .modal-content {
+  padding: 10px 20px;
+  height: 220px;
+}
+
+.addCart-modal h5, .addCart-modal .h5 {
+  margin-top: 10px;
+}
+
+.addCart-modal h5 i, .addCart-modal .h5 i {
+  margin-right: 10px;
+}
+
+.addCart-modal .fa-exclamation-triangle {
+  color: #ffc107;
+}
+
+.addCart-modal .fa-check-circle {
+  color: #198754;
+}
+
+.addCart-modal .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.addCart-modal .btn {
+  margin: 0 20px;
+}
+
+.image-modal .modal-content {
+  border: none;
+  border-radius: 10px;
+}
+
+.image-modal .modal-content img {
+  border-radius: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

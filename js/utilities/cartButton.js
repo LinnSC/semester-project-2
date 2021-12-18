@@ -1,9 +1,7 @@
 import getExistingProd from "./storage/getProd.js";
 import { addToCart, cartCount } from "./storage/addToCart.js";
-import displayAlert from "../components/displayAlert.js";
 
-import { WARNING_ALERT, SHOW_ALERT } from "../constants/misc.js";
-import MESSAGES from "../constants/messages.js";
+import { addCartModal, noStockModal } from "./addCartModals.js";
 
 const currentProd = getExistingProd();
 
@@ -36,26 +34,9 @@ function handleClick() {
     currentProd.push(product);
 
     addToCart(currentProd);
-
+    addCartModal();
     cartCount();
-
-    // const modalContainer = document.querySelector(".alert-container");
-
-    // modalContainer.innerHTML += `<div class=" modal fade" id="alertModal" tabindex="-1" aria-labelledby="alertModalLabel" aria-hidden="true">
-    //                             <div class="modal-dialog modal-dialog-centered">
-    //                             <div class="modal-content">
-    //                                 <div class="modal-header">
-    //                                 <h5 class="modal-title" id="alertModalLabel">Hello</h5>
-    //                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    //                                 </div>
-    //                                 <div class="modal-body">
-    //                                 <p>Hello</p>
-    //                                 </div>
-    //                             </div>
-    //                             </div>
-    //                         </div>`;
   } else {
-    displayAlert(WARNING_ALERT, MESSAGES.no_more_stock, SHOW_ALERT);
-    window.scrollTo(0, 0);
+    noStockModal();
   }
 }

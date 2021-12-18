@@ -1,0 +1,53 @@
+.modal {
+  .btn-close {
+    margin: 7px 7px 0 0;
+  }
+}
+
+.addCart-modal {
+  @media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 600px;
+    }
+  }
+  .modal-content {
+    padding: 10px 20px;
+    height: 220px;
+  }
+
+  h5 {
+    margin-top: 10px;
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  .fa-exclamation-triangle {
+    color: $warning;
+  }
+
+  .fa-check-circle {
+    color: $success;
+  }
+
+  .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    margin: 0 20px;
+  }
+}
+
+.image-modal {
+  .modal-content {
+    border: none;
+    border-radius: 10px;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+}
