@@ -10406,7 +10406,6 @@ h4, .h4 {
 
 main {
   margin-top: 80px;
-  padding-bottom: 80px;
 }
 
 .spacing {
@@ -10499,13 +10498,23 @@ main {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-.hero {
-  position: relative;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
+.hero__background {
+  background-size: cover;
+  min-height: 30vh;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
 }
 
 .hero__text {
@@ -10523,6 +10532,10 @@ main {
 }
 
 @media (min-width: 576px) {
+  .hero__background {
+    min-height: 50vh;
+    padding: 10% 20%;
+  }
   .hero__text {
     top: 15%;
     width: 70%;
@@ -10534,6 +10547,9 @@ main {
 }
 
 @media (min-width: 992px) {
+  .hero__background {
+    min-height: 70vh;
+  }
   .hero__text {
     width: 60%;
   }

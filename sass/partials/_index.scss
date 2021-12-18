@@ -1,37 +1,27 @@
 // Hero section start
 
 .hero {
-  position: relative;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // width: 100%;
+  // min-height: 70vh;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-around;
+  // align-items: center;
+  // margin: 0;
+  // padding: 20px;
 
-  img {
-    width: 100%;
-    height: auto;
+  &__background {
+    background-size: cover;
+    min-height: 30vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
   }
-
-  // &__img--desktop {
-  //   display: none;
-
-  //   @include media-breakpoint-up(md) {
-  //     display: block;
-  //   }
-  // }
-
-  // &__img--tablet {
-  //   display: none;
-
-  //   @include media-breakpoint-up(sm) {
-  //     display: block;
-  //   }
-  //   @include media-breakpoint-up(md) {
-  //     display: none;
-  //   }
-  // }
-
-  // &__img--mobile {
-  //   @include media-breakpoint-up(sm) {
-  //     display: none;
-  //   }
-  // }
 
   &__text {
     position: absolute;
@@ -47,6 +37,11 @@
   }
 
   @include media-breakpoint-up(sm) {
+    &__background {
+      min-height: 50vh;
+      padding: 10% 20%;
+    }
+
     &__text {
       top: 15%;
       width: 70%;
@@ -59,6 +54,10 @@
   }
 
   @include media-breakpoint-up(lg) {
+    &__background {
+      min-height: 70vh;
+    }
+
     &__text {
       width: 60%;
     }
