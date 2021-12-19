@@ -1,5 +1,3 @@
-import { getToken } from "../utilities/storage/getLoginInfo.js";
-
 const footerContainer = document.querySelector("footer");
 const menuContainer = document.querySelector("header");
 

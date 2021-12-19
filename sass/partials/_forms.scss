@@ -1,3 +1,9 @@
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+}
+
 .form-container {
   margin: 0 auto;
   max-width: 85%;

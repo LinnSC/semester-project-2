@@ -46,36 +46,6 @@
   }
 }
 
-// .cart-products {
-//   th {
-//     padding: 0 0 15px 10px;
-//   }
-
-//   .prod {
-//     tr {
-//       border-color: black;
-//       border-style: solid;
-//       border-width: 1px;
-//       border-bottom: transparent;
-//       border-left: transparent;
-//       border-right: transparent;
-//     }
-
-//     .title {
-//       font-weight: 600;
-//     }
-//   }
-
-//   td {
-//     padding-left: 10px;
-//     font-size: 0.9rem;
-
-//     @include media-breakpoint-up(md) {
-//       font-size: 1rem;
-//     }
-//   }
-// }
-
 .cart-summary {
   .card {
     width: 300px;

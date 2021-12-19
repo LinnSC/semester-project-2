@@ -10073,12 +10073,6 @@ html {
           box-sizing: inherit;
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none !important;
-}
-
 body {
   font-family: "Assistant", sans-serif;
   min-height: 100vh;
@@ -10693,6 +10687,12 @@ main {
   }
 }
 
+@media (min-width: 992px) {
+  .featured__cards {
+    max-width: 70%;
+  }
+}
+
 .waitingList {
   background-color: #e6ece6;
 }
@@ -11092,23 +11092,6 @@ main {
   margin-right: 5px;
 }
 
-.alert {
-  height: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.alert p {
-  font-size: 1.1rem;
-}
-
 .breadcrumb-container {
   max-width: 90%;
   margin: 0 auto;
@@ -11143,6 +11126,12 @@ main {
   .breadcrumb-container .breadcrumb {
     margin-top: 4rem;
   }
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
 }
 
 .form-container {

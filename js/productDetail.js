@@ -9,7 +9,6 @@ import { cartBtnClick } from "./utilities/cartButton.js";
 
 import createBreadcrumb from "./components/createBreadcrumb.js";
 import createTitle from "./components/createTitle.js";
-import rederect from "./utilities/rederect.js";
 
 noID();
 

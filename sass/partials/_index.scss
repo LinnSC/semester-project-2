@@ -47,6 +47,9 @@
     @include media-breakpoint-up(sm) {
       max-width: 80%;
     }
+    @include media-breakpoint-up(lg) {
+      max-width: 70%;
+    }
   }
 }
 
