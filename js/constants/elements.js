@@ -1,6 +1,7 @@
 const footerContainer = document.querySelector("footer");
 const menuContainer = document.querySelector("header");
 
+const messageContainer = document.querySelector(".msg");
 const titleContainer = document.querySelector("title");
 const breadcrumbCurrent = document.querySelector(".breadcrumb-current");
 
@@ -65,6 +66,7 @@ const elements = {
   featuredContainer,
   heroContainer,
   productsContainer,
+  messageContainer,
   search,
   detailsContainer,
   queryString,

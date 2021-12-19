@@ -18,13 +18,11 @@ export function searchProducts(title) {
     });
 
     if (filteredProduct.length === 0) {
+      elements.productsContainer.innerHTML = "";
       displayMessage(WARNING_CLASS, MESSAGES.no_result, SHOW_MESSAGE);
     } else {
+      elements.messageContainer.innerHTML = "";
       renderProducts(filteredProduct);
-    }
-
-    if (searchValue.length === 0) {
-      document.location.reload();
     }
   };
 }
