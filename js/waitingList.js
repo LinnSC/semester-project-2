@@ -32,7 +32,7 @@ function validateForm(event) {
   }
 
   if (
-    checkLength(elements.fullName.value, 5) &&
+    checkLength(elements.fullName.value, 3) &&
     validateEmail(elements.email.value) &&
     checkLength(elements.subject.value, 0) &&
     checkLength(elements.message.value, 15)
