@@ -3,9 +3,9 @@ import elements from "../constants/elements.js";
 export default function createFooter() {
   elements.footerContainer.innerHTML += `<section class="footer-section d-flex flex-column align-items-center justify-content-between">
                                 <div class="some">
-                                    <i class="fab fa-instagram"><a href="instagram.com"></a></i>
-                                    <i class="fab fa-facebook-square"><a href="facebook.com"></a></i>
-                                    <i class="fab fa-linkedin"><a href="linkedin.com"></a></i>
+                                <a href="instagram.com"><i class="fab fa-instagram"></i></a>
+                                <a href="facebook.com"><i class="fab fa-facebook-square"></i></a>
+                                <a href="linkedin.com"> <i class="fab fa-linkedin"></i></a>
                                 </div>
                                 <div class="d-flex flex-column justify-content-evenly align-items-center">
                                     <h4>Contact</h4>

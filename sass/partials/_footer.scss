@@ -4,19 +4,24 @@
   color: $body-bg;
   padding: 30px 0 10px 0;
 
-  .some i {
-    font-size: 25px;
-    margin: 0 5px 0 5px;
+  .some {
+    .fab {
+      font-size: 25px;
+      margin: 0 5px 0 5px;
+      color: white;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      @include media-breakpoint-up(md) {
+        font-size: 30px;
+        margin: 0 7px 0 7px;
+      }
+    }
   }
 
   .copy p {
     margin: 0;
-  }
-
-  @include media-breakpoint-up(md) {
-    .some i {
-      font-size: 30px;
-      margin: 0 7px 0 7px;
-    }
   }
 }

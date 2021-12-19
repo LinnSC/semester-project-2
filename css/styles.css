@@ -10463,20 +10463,25 @@ h4, .h4 {
   padding: 30px 0 10px 0;
 }
 
-.footer-section .some i {
+.footer-section .some .fab {
   font-size: 25px;
   margin: 0 5px 0 5px;
+  color: white;
+}
+
+.footer-section .some .fab:hover {
+  opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .footer-section .some .fab {
+    font-size: 30px;
+    margin: 0 7px 0 7px;
+  }
 }
 
 .footer-section .copy p {
   margin: 0;
-}
-
-@media (min-width: 768px) {
-  .footer-section .some i {
-    font-size: 30px;
-    margin: 0 7px 0 7px;
-  }
 }
 
 main {
