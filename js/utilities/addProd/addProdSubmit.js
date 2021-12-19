@@ -34,11 +34,11 @@ export default function addProdSubmit(event) {
     elements.priceError.style.display = "block";
   }
 
-  if (checkNumber(priceValue)) {
-    elements.priceError.style.display = "none";
-  } else {
-    elements.priceError.style.display = "block";
-  }
+  // if (checkNumber(priceValue)) {
+  //   elements.priceError.style.display = "none";
+  // } else {
+  //   elements.priceError.style.display = "block";
+  // }
 
   if (checkLength(descriptionValue, 0)) {
     elements.descripError.style.display = "none";

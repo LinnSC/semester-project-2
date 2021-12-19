@@ -70,6 +70,10 @@
           <div class="mb-4">
             <label for="inputDescription" class="form-label">Description</label>
             <textarea
+              type="number"
+              name="test"
+              min="0"
+              oninput="validity.valid||(value='');"
               class="form-control"
               aria-label="Description"
               id="inputDescription"
