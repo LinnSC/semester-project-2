@@ -38,6 +38,18 @@ main {
   }
 }
 
+.space-sm {
+  padding: 1rem 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 2rem 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 2.5rem 0;
+  }
+}
+
 .mar-side {
   margin: 0 10px;
 

@@ -40,6 +40,8 @@ export async function updateProduct(
     const response = await fetch(DETAILS_URL, options);
     const json = await response.json();
 
+    console.log(json);
+
     if (json.created_at) {
       window.scrollTo(0, 0);
       displayMessage(SUCCESS_CLASS, MESSAGES.prod_updated, FORM_MESSAGE);

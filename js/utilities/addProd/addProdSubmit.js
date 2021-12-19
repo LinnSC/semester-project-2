@@ -1,11 +1,8 @@
 import elements from "../../constants/elements.js";
 import { checkLength, checkFour, checkNumber } from "../validateForm.js";
 import { addProduct } from "./addProduct.js";
-
 import displayMessage from "../../components/displayMessage.js";
-
 import { WARNING_CLASS, FORM_MESSAGE } from "../../constants/misc.js";
-
 import MESSAGES from "../../constants/messages.js";
 
 export default function addProdSubmit(event) {

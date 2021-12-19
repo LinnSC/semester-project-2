@@ -10073,7 +10073,6 @@ html {
           box-sizing: inherit;
 }
 
-button:focus,
 input:focus,
 textarea:focus,
 select:focus {
@@ -10351,13 +10350,19 @@ h4, .h4 {
   font-size: 1rem;
 }
 
+.btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .btn:hover {
   opacity: 0.6;
   -webkit-transition: all ease-out 0.4s;
   transition: all ease-out 0.4s;
 }
 
-.btn-dark {
+.btn .btn-dark {
   background-color: black;
 }
 
@@ -10523,6 +10528,22 @@ main {
 @media (min-width: 992px) {
   .mar-bottom {
     margin-bottom: 120px;
+  }
+}
+
+.space-sm {
+  padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .space-sm {
+    padding: 2rem 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .space-sm {
+    padding: 2.5rem 0;
   }
 }
 
@@ -11048,7 +11069,7 @@ main {
 }
 
 .list-products .reload {
-  text-align: right;
+  text-align: center;
   margin: 2rem 0 15px 0;
   cursor: pointer;
 }
@@ -11140,6 +11161,10 @@ main {
   .form-container {
     max-width: 40%;
   }
+}
+
+.form-container .id-input-lable {
+  display: none;
 }
 
 .waiting-list {
