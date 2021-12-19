@@ -14,8 +14,7 @@ export async function updateProduct(
   price,
   description,
   image,
-  featured,
-  id
+  featured
 ) {
   const data = JSON.stringify({
     title: title,

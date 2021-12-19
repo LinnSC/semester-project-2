@@ -3,7 +3,7 @@ import MESSAGES from "../../constants/messages.js";
 import elements from "../../constants/elements.js";
 import { FORM_MESSAGE, WARNING_CLASS } from "../../constants/misc.js";
 
-import { checkLength, checkFive, checkNumber } from "../validateForm.js";
+import { checkLength, checkFour, checkNumber } from "../validateForm.js";
 import { updateProduct } from "./updateProduct.js";
 
 export default function editProdSubmit(event) {
@@ -17,7 +17,6 @@ export default function editProdSubmit(event) {
   const descriptionValue = elements.description.value;
   const imageValue = elements.image.value;
   const featuredValue = elements.featured.checked;
-  const idValue = elements.prodId.value;
 
   if (checkLength(titleValue, 0)) {
     elements.titleError.style.display = "none";
@@ -49,21 +48,8 @@ export default function editProdSubmit(event) {
     elements.imageError.style.display = "block";
   }
 
-  if (checkLength(idValue, 0)) {
-    elements.idError.style.display = "none";
-  } else {
-    elements.idError.style.display = "block";
-  }
-
   if (
-    !checkFive(
-      titleValue,
-      descriptionValue,
-      imageValue,
-      idValue,
-      priceString,
-      0
-    ) ||
+    !checkFour(titleValue, descriptionValue, imageValue, priceString, 0) ||
     !checkNumber(priceValue)
   ) {
     window.scrollTo(0, 0);
@@ -78,8 +64,7 @@ export default function editProdSubmit(event) {
       priceValue,
       descriptionValue,
       imageValue,
-      featuredValue,
-      idValue
+      featuredValue
     );
   }
 }
