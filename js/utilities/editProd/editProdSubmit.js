@@ -17,6 +17,7 @@ export default function editProdSubmit(event) {
   const descriptionValue = elements.description.value;
   const imageValue = elements.image.value;
   const featuredValue = elements.featured.checked;
+  const idValue = elements.prodId.value;
 
   if (checkLength(titleValue, 0)) {
     elements.titleError.style.display = "none";
@@ -64,7 +65,8 @@ export default function editProdSubmit(event) {
       priceValue,
       descriptionValue,
       imageValue,
-      featuredValue
+      featuredValue,
+      idValue
     );
   }
 }
