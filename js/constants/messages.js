@@ -12,8 +12,6 @@ const MESSAGES = {
   missing_prod_info: "You need to fill in all fields.",
   prod_created: "New product is created.",
   prod_updated: "Product is updated.",
-  not_loggedin:
-    "You need to log in before you can add, edit and delete products.",
 };
 
 export default MESSAGES;

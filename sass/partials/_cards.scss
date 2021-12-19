@@ -30,4 +30,6 @@
 .card {
   border: none;
   box-shadow: $box-shadow;
+  word-break: break-all;
+  overflow-wrap: break-word;
 }

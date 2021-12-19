@@ -46,8 +46,9 @@ export async function updateProduct(
     }
 
     if (json.error) {
+      const invalidMessage = json.message[0].messages[0].message;
       window.scrollTo(0, 0);
-      displayMessage(ERROR_CLASS, MESSAGES.not_loggedin, FORM_MESSAGE);
+      displayMessage(ERROR_CLASS, invalidMessage, FORM_MESSAGE);
     }
   } catch (error) {
     window.scrollTo(0, 0);
