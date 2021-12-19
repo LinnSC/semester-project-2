@@ -50,6 +50,17 @@ const editForm = document.querySelector(".edit-form");
 const deleteContainer = document.querySelector(".delete-container");
 const reloadBtn = document.querySelector(".reload");
 
+const waitingListform = document.querySelector(".waiting-list__form");
+const fullName = document.querySelector("#inputName");
+const fullNameError = document.querySelector("#nameError");
+const email = document.querySelector("#inputEmail");
+const emailError = document.querySelector("#emailError");
+const subject = document.querySelector("#inputSubject");
+const subjectError = document.querySelector("#subjectError");
+const message = document.querySelector("#inputMessage");
+const messageError = document.querySelector("#messageError");
+const validationMessage = document.querySelector(".form-message");
+
 const elements = {
   footerContainer,
   menuContainer,
@@ -90,6 +101,16 @@ const elements = {
   editForm,
   deleteContainer,
   reloadBtn,
+  waitingListform,
+  fullName,
+  fullNameError,
+  email,
+  emailError,
+  subject,
+  subjectError,
+  message,
+  messageError,
+  validationMessage,
 };
 
 export default elements;

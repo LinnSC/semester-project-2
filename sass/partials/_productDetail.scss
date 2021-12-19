@@ -39,19 +39,17 @@
 
   .card-price {
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 700;
+
+    text-align: right;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.3rem;
+      text-align: left;
+    }
 
     @include media-breakpoint-up(md) {
-      font-size: 1.5rem;
-    }
-  }
-
-  h1 {
-    @include media-breakpoint-up(sm) {
-      font-size: 2rem;
-    }
-    @media (min-width: 800px) {
-      font-size: 2.5rem;
+      font-size: 1.3rem;
     }
   }
 

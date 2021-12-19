@@ -12,6 +12,9 @@ const MESSAGES = {
   missing_prod_info: "You need to fill in all fields.",
   prod_created: "New product is created.",
   prod_updated: "Product is updated.",
+
+  waitingList_submit:
+    "Thank you for your message! We will contact you regarding availability of the item you are looking for.",
 };
 
 export default MESSAGES;

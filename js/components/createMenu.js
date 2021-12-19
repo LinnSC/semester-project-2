@@ -60,6 +60,16 @@ export default function createMenu() {
                                         </div>
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                              
+                                              <li class="d-flex justify-content-end nav-item">
+                                                <a href="/" class="nav-link ${
+                                                  pathname === "/"
+                                                    ? "active"
+                                                    : ""
+                                                }">
+                                                Home
+                                                </a>
+                                              </li>
 
                                               <li class="d-flex justify-content-end nav-item">
                                                 <a href="products.html" class="nav-link ${
@@ -69,17 +79,8 @@ export default function createMenu() {
                                                 }">
                                                 Products
                                                 </a>
-                                              </li>
+                                               </li>
 
-                                              <li class="d-flex justify-content-end nav-item">
-                                                <a href="about.html" class="nav-link ${
-                                                  pathname === "/about.html"
-                                                    ? "active"
-                                                    : ""
-                                                }">
-                                                About
-                                                </a>
-                                              </li>
 
                                               <li class="d-flex justify-content-end nav-item">
                                                 <a href="waitinglist.html" class="nav-link ${

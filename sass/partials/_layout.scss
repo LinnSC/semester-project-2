@@ -38,6 +38,18 @@ main {
   }
 }
 
+.mar-side {
+  margin: 0 10px;
+
+  @include media-breakpoint-up(sm) {
+    margin: 0 30px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin: 0 50px;
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
