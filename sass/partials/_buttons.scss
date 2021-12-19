@@ -17,6 +17,16 @@
   background-color: black;
 }
 
+.btn-primary {
+  width: 150px;
+  height: 50px;
+
+  @include media-breakpoint-up(sm) {
+    width: 180px;
+    margin-top: 1.5rem;
+  }
+}
+
 .login__btn {
   width: 120px;
   height: auto;
@@ -25,21 +35,19 @@
 }
 
 .btn-sm {
-  width: 120px;
-  height: 40px;
-  font-size: 0.9rem;
-  font-weight: 500;
+  width: 150px;
+  height: 50px;
   padding: 0;
   margin-top: 1rem;
+  font-weight: 700;
 
   @include media-breakpoint-up(sm) {
-    width: 150px;
+    width: 160px;
     margin-top: 1.5rem;
   }
 
   @include media-breakpoint-up(md) {
-    width: 160px;
-    height: 45px;
+    width: 170px;
     font-size: 1rem;
   }
 

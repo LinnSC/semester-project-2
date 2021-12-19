@@ -14,6 +14,14 @@ export function checkBoth(value1, value2, len) {
   }
 }
 
+export function checkNumber(numberValue) {
+  if (!isNaN(numberValue)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 export function checkFour(value1, value2, value3, value4, len) {
   if (
     value1.trim().length > len &&

@@ -10301,6 +10301,18 @@ h4, .h4 {
   background-color: black;
 }
 
+.btn-primary {
+  width: 150px;
+  height: 50px;
+}
+
+@media (min-width: 576px) {
+  .btn-primary {
+    width: 180px;
+    margin-top: 1.5rem;
+  }
+}
+
 .login__btn {
   width: 120px;
   height: auto;
@@ -10309,25 +10321,23 @@ h4, .h4 {
 }
 
 .btn-sm {
-  width: 120px;
-  height: 40px;
-  font-size: 0.9rem;
-  font-weight: 500;
+  width: 150px;
+  height: 50px;
   padding: 0;
   margin-top: 1rem;
+  font-weight: 700;
 }
 
 @media (min-width: 576px) {
   .btn-sm {
-    width: 150px;
+    width: 160px;
     margin-top: 1.5rem;
   }
 }
 
 @media (min-width: 768px) {
   .btn-sm {
-    width: 160px;
-    height: 45px;
+    width: 170px;
     font-size: 1rem;
   }
 }
@@ -10425,18 +10435,34 @@ main {
 }
 
 .mar-top {
-  margin-top: 3rem;
+  margin-top: 60px;
 }
 
 @media (min-width: 576px) {
   .mar-top {
-    margin-top: 4rem;
+    margin-top: 80px;
   }
 }
 
 @media (min-width: 992px) {
   .mar-top {
-    margin-top: 5rem;
+    margin-top: 100px;
+  }
+}
+
+.mar-bottom {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 576px) {
+  .mar-bottom {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mar-bottom {
+    margin-bottom: 120px;
   }
 }
 
@@ -11152,12 +11178,6 @@ form .form-text {
   margin: 7px 7px 0 0;
 }
 
-@media (min-width: 576px) {
-  .addCart-modal .modal-dialog {
-    max-width: 600px;
-  }
-}
-
 .addCart-modal .modal-content {
   padding: 10px 20px;
   height: 220px;
@@ -11192,7 +11212,16 @@ form .form-text {
 }
 
 .addCart-modal .btn {
-  margin: 0 20px;
+  margin: 0 15px;
+}
+
+@media (min-width: 576px) {
+  .addCart-modal .modal-dialog {
+    max-width: 600px;
+  }
+  .addCart-modal .btn {
+    margin: 0 30px;
+  }
 }
 
 .image-modal .modal-content {

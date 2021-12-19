@@ -1,5 +1,5 @@
 import elements from "../../constants/elements.js";
-import { checkLength, checkFour } from "../validateForm.js";
+import { checkLength, checkFour, checkNumber } from "../validateForm.js";
 import { addProduct } from "./addProduct.js";
 
 import displayMessage from "../../components/displayMessage.js";
@@ -14,15 +14,30 @@ export default function addProdSubmit(event) {
   elements.formMessage.innerHTML = "";
 
   const titleValue = elements.title.value;
-  const priceValue = elements.price.value;
+  const priceValue = Number.parseFloat(elements.price.value);
+  const priceString = elements.price.value.toString();
   const descriptionValue = elements.description.value;
   const imageValue = elements.image.value;
   const featuredValue = elements.featured.checked;
+
+  console.log(priceString.trim().length);
 
   if (checkLength(titleValue, 0)) {
     elements.titleError.style.display = "none";
   } else {
     elements.titleError.style.display = "block";
+  }
+
+  if (checkLength(priceString, 0)) {
+    elements.priceError.style.display = "none";
+  } else {
+    elements.priceError.style.display = "block";
+  }
+
+  if (checkNumber(priceValue)) {
+    elements.priceError.style.display = "none";
+  } else {
+    elements.priceError.style.display = "block";
   }
 
   if (checkLength(descriptionValue, 0)) {
@@ -37,13 +52,10 @@ export default function addProdSubmit(event) {
     elements.imageError.style.display = "block";
   }
 
-  if (checkLength(priceValue, 0)) {
-    elements.priceError.style.display = "none";
-  } else {
-    elements.priceError.style.display = "block";
-  }
-
-  if (!checkFour(titleValue, descriptionValue, imageValue, priceValue, 0)) {
+  if (
+    !checkFour(titleValue, descriptionValue, imageValue, priceString, 0) ||
+    !checkNumber(priceValue)
+  ) {
     window.scrollTo(0, 0);
     return displayMessage(
       WARNING_CLASS,
