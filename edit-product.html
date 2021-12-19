@@ -59,21 +59,20 @@
             <label for="inputPrice" class="form-label">Price</label>
             <input
               type="number"
+              name="test"
+              min="1"
+              oninput="validity.valid||(value='');"
               class="form-control"
               id="inputPrice"
               aria-describedby="priceError"
             />
             <div id="priceError" class="form-text">
-              *Please put in a product price
+              *Please put in a product price. It has to be a positive number.
             </div>
           </div>
           <div class="mb-4">
             <label for="inputDescription" class="form-label">Description</label>
             <textarea
-              type="number"
-              name="test"
-              min="0"
-              oninput="validity.valid||(value='');"
               class="form-control"
               aria-label="Description"
               id="inputDescription"

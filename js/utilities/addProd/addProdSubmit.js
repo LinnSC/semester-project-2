@@ -20,8 +20,6 @@ export default function addProdSubmit(event) {
   const imageValue = elements.image.value;
   const featuredValue = elements.featured.checked;
 
-  console.log(priceString.trim().length);
-
   if (checkLength(titleValue, 0)) {
     elements.titleError.style.display = "none";
   } else {
@@ -34,11 +32,11 @@ export default function addProdSubmit(event) {
     elements.priceError.style.display = "block";
   }
 
-  // if (checkNumber(priceValue)) {
-  //   elements.priceError.style.display = "none";
-  // } else {
-  //   elements.priceError.style.display = "block";
-  // }
+  if (checkNumber(priceValue)) {
+    elements.priceError.style.display = "none";
+  } else {
+    elements.priceError.style.display = "block";
+  }
 
   if (checkLength(descriptionValue, 0)) {
     elements.descripError.style.display = "none";

@@ -1,6 +1,4 @@
 import elements from "../constants/elements.js";
-import { DETAILS_URL } from "../constants/api.js";
-import { getToken } from "../utilities/storage/getLoginInfo.js";
 
 export function listProducts(listProd) {
   elements.prodContainer.innerHTML = "";
@@ -8,7 +6,7 @@ export function listProducts(listProd) {
   listProd.forEach(function (json) {
     elements.prodContainer.innerHTML += `<tr>
                                     <th scope="row">
-                                    <a href="editProduct.html?id=${json.id}">
+                                    <a href="edit-product.html?id=${json.id}">
                                     <img
                                         src="${json.image_url}"
                                         class="img-thumbnail"
@@ -17,7 +15,7 @@ export function listProducts(listProd) {
                                     </a>
                                     </th>
                                     <td class="title align-top">
-                                        <a href="editProduct.html?id=${json.id}">
+                                        <a href="edit-product.html?id=${json.id}">
                                             ${json.title}
                                         </a>
                                     </td>

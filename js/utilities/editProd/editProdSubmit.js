@@ -3,7 +3,7 @@ import MESSAGES from "../../constants/messages.js";
 import elements from "../../constants/elements.js";
 import { FORM_MESSAGE, WARNING_CLASS } from "../../constants/misc.js";
 
-import { checkLength, checkFive } from "../validateForm.js";
+import { checkLength, checkFive, checkNumber } from "../validateForm.js";
 import { updateProduct } from "./updateProduct.js";
 
 export default function editProdSubmit(event) {
@@ -12,7 +12,8 @@ export default function editProdSubmit(event) {
   elements.formMessage.innerHTML = "";
 
   const titleValue = elements.title.value;
-  const priceValue = elements.price.value;
+  const priceValue = Number.parseFloat(elements.price.value);
+  const priceString = elements.price.value.toString();
   const descriptionValue = elements.description.value;
   const imageValue = elements.image.value;
   const featuredValue = elements.featured.checked;
@@ -22,6 +23,18 @@ export default function editProdSubmit(event) {
     elements.titleError.style.display = "none";
   } else {
     elements.titleError.style.display = "block";
+  }
+
+  if (checkLength(priceString, 0)) {
+    elements.priceError.style.display = "none";
+  } else {
+    elements.priceError.style.display = "block";
+  }
+
+  if (checkNumber(priceValue)) {
+    elements.priceError.style.display = "none";
+  } else {
+    elements.priceError.style.display = "block";
   }
 
   if (checkLength(descriptionValue, 0)) {
@@ -36,12 +49,6 @@ export default function editProdSubmit(event) {
     elements.imageError.style.display = "block";
   }
 
-  if (checkLength(priceValue, 0)) {
-    elements.priceError.style.display = "none";
-  } else {
-    elements.priceError.style.display = "block";
-  }
-
   if (checkLength(idValue, 0)) {
     elements.idError.style.display = "none";
   } else {
@@ -49,7 +56,15 @@ export default function editProdSubmit(event) {
   }
 
   if (
-    !checkFive(titleValue, descriptionValue, imageValue, priceValue, idValue, 0)
+    !checkFive(
+      titleValue,
+      descriptionValue,
+      imageValue,
+      idValue,
+      priceString,
+      0
+    ) ||
+    !checkNumber(priceValue)
   ) {
     window.scrollTo(0, 0);
     return displayMessage(
