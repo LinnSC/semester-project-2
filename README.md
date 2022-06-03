@@ -25,14 +25,11 @@ In my project I created a vintage online store selling vintage luxury items such
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
 1. Clone the repo:
 
 ```bash
 git clone https://github.com/LinnSC/semester-project-2
 ```
-
 
 ### Running
 
@@ -41,7 +38,7 @@ Just open in your browser!
 
 ## Contributing
 
-To contribute
+If you want to contibute to this project you...
 
 ## Contact
 
