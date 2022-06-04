@@ -33,7 +33,7 @@ git clone https://github.com/LinnSC/semester-project-2
 
 ### Running
 
-Just open in your browser!
+Open the index.html page in your browser to see the first page.
 
 
 ## Contributing
