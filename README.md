@@ -38,7 +38,7 @@ Open the index.html page in your browser to see the first page.
 
 ## Contributing
 
-If you want to contibute to this project you...
+If you want to contibute to this project you have to make sure to open a pull request so code can be reviewed.
 
 ## Contact
 
