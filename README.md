@@ -10,8 +10,19 @@
 ## Description
 
 This is the semester project of the third semester of Front-end Development at Noroff. The goal of this semester project was to create an e-commerce website that had both customer-facing and admin sections.
+<br>
+In my project I created a vintage online store, called "Pre Loved", selling vintage luxury items such as bags, shoes and jewelry. 
+<br>
 
-In my project I created a vintage online store selling vintage luxury items such as bags, shoes and jewelry. The website is called Pre Loved, and has a list of all the products, a product spesific page and a shopping cart. The admin section includes adding, editing and deleting products. 
+### Visitor site
+The visitor site consists of a home page featuring "New in". It also has a product page, with a product spesific page. The user can also shop the items by puting the products in a shopping cart. Users can also contact the store to request waiting list for an item. 
+
+### Admin section
+To get into the admin section you have to log in. Here you can add, edit and delete products. 
+
+### Login info
+Username: linn.corneliussen@gmail.com <br>
+Password: User123
 
 
 ## Built With
@@ -28,7 +39,8 @@ In my project I created a vintage online store selling vintage luxury items such
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/LinnSC/semester-project-2
+git clone git@github.com:LinnSC/semester-project-2.git
+
 ```
 
 ### Running
