@@ -39,7 +39,7 @@ Password: User123
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:LinnSC/semester-project-2.git
+git clone https://github.com/LinnSC/semester-project-2
 
 ```
 
