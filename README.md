@@ -18,7 +18,7 @@ In my project I created a vintage online store, called "Pre Loved", selling vint
 The visitor site consists of a home page featuring "New in". It also has a product page, with a product spesific page. The user can also shop the items by puting the products in a shopping cart. Users can also contact the store to request waiting list for an item. 
 
 ### Admin section
-To get into the admin section you have to log in. Here you can add, edit and delete products. 
+To get into the admin section you have to log in. In the admin pages you can add, edit and delete products. 
 
 ### Login info
 Username: linn.corneliussen@gmail.com <br>
