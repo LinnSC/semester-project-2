@@ -9,7 +9,7 @@
 
 ## Description
 
-This is the semester project of the third semester of Front-end Development at Noroff. The goal of this semester project was to create an e-commerce website that had both customer-facing and admin sections.
+This is the semester project of the first semester of Front-end development 2nd year. The goal of this semester project was to create an e-commerce website that had both customer-facing and admin sections.
 <br>
 In my project I created a vintage online store, called "Pre Loved", selling vintage luxury items such as bags, shoes and jewelry. 
 <br>
